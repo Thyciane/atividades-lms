@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+div{
+    display: block;    
+}
+.topo{
+    padding-bottom: 20px;
+}
+.direito {
+    position: relative;
+    overflow: auto;
+    padding: 16px;
+    float: right;
+    font-family: "Segoe UI",Arial,sans-serif;
+    letter-spacing: 4px;
+    font-size: 15px;
+}
+header{
+    font-family: 'fontawesome';
+    padding: 17px;
+} 
+.w3{
+    font-size: 37px;
+    letter-spacing: 3px;
+    color: #555555;
+    display: block;
+    position: absolute;
+    text-decoration: none;
+}   
+.com{
+    color: #4CAF50;
+    font-size: 37px;
+    letter-spacing: 3px;
+}
+
+@font-face {
+    font-family:'fontawesome';
+    src:url('fontawesome.eot') format('embedded-opentype'),
+    url('fontawesome.woff') format('woff'),
+    url('fontawesome.ttf') format('truetype');
+    font-style:normal;
+}
+
+.navega > ul > li{
+    float: left;
+    list-style: none;
+}
+.navega > ul{
+    background-color: #4CAF50;
+    overflow: auto;
+    padding: 0px;
+    margin: 0;   
+}
+.navega > ul > li > a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+}
+.navega > ul > li > a:hover{
+    background-color: white;
+    color:black;
+}
+
+.navega2{
+    background-color: white;
+    width: 17%;
+    height: 1000px;
+    float: left;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
+    
+}
+
+.navega2 > ul{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.navega2 >ul> li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+}
+
+.navega2 ul li a:hover{
+    background-color: #ccc;
+    cursor: pointer;
+}
+
+
+.navega > ul{
+    list-style: none;
+}
+
+.navega > ul > li > a, .dropdown .dropdown-button{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    float:left;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown-list{
+    position: absolute;
+    background-color: white;
+    width: 25%;
+    font-size: 16px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+
+.dropdown .dropdown-button{
+    float:none;
+}
+
+.nav-superior > ul > li > a:hover, .dropdown .dropdown-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.dropdown-list > ul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+.dropdown-list >ul> li{
+    margin: 10px;
+}
+.dropdown-list > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-list > ul > li > a:hover{
+    background-color: #ccc;
+}
