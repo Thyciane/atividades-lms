@@ -1,0 +1,146 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+header{
+    font-family: sans-serif;
+    box-shadow: 0px 3px 3px rgba(0,0,0,0.5);
+}
+.navega > ul > li{
+    float: left;
+    list-style: none;
+}
+.navega > ul{
+    background-color: pink;
+    overflow: auto;
+    padding: 0px;
+    margin: 0;   
+    height: 0%;
+}
+.navega > ul > li > a{
+    padding: 10px;
+    text-decoration: none;
+    font-size: 17px;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+    height: 0%;
+    transition: all 1s;
+}
+.navega > ul > li > a:hover{
+    background-color: white;
+    color:black;
+    height: 100%;
+}
+
+.navega2{
+    background: linear-gradient(pink,#fff);
+    width: 17%;
+    height: 1000px;
+    float: right;
+    border: left: 1px;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    box-shadow: 0px 7px 6px 3px rgba(0,0,0,0.5);
+   
+}
+
+.navega2 > ul{
+    list-style: none;
+    margin: 10px;
+    padding: 5px;
+}
+
+.navega2 >ul> li a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+    transition: background-color 300ms;
+}
+
+.navega2 ul li a:hover{
+    background-color: white;
+    cursor: pointer;
+    background-color: #bbb;
+}
+
+
+.navega > ul{
+    list-style: none;
+}
+
+.navega > ul > li > a, .dropdown .dropdown-button{
+    display: block;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 3px;
+    float:left;
+    padding: 20px;
+    cursor: pointer;
+}
+
+.dropdown{
+    float: left;
+}
+
+.dropdown-list{
+    position: absolute;
+    background-color: pink;
+    width: 25%;
+    font-size: 16px;
+    display: none;
+}
+
+.dropdown:hover .dropdown-list{
+    display: block;
+}
+
+.dropdown .dropdown-button{
+    float:none;
+}
+
+.nav-superior > ul > li > a:hover, .dropdown .dropdown-button:hover{
+    background-color: white;
+    color: black;
+}
+
+.dropdown-list > ul{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    list-style: none;
+}
+.dropdown-list >ul> li{
+    margin: 10px;
+}
+.dropdown-list > ul > li > a{
+    display: block;
+    text-decoration: none;
+    color: black;
+}
+
+.dropdown-list > ul > li > a:hover{
+    background-color: white;
+}
+
+.animação{
+    width: 400px;
+    height: 400px;
+    background-image: url(aa.jpg); 
+    animation-name: rodar;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    float: left;
+    margin: 10px;
+}
+@keyframes rodar{
+    0%{
+        transform: rotateX(0deg);
+    }
+    30%{
+        transform: rotateX(180deg);
+    }
+    100%{
+        transform: rotateX(360deg);
+    }
+}
