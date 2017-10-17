@@ -1,0 +1,72 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+a {
+    text-decoration: none;
+}
+
+.nav-lateral {
+    width: 250px;
+    height: 100vh;
+    background: white;
+    border-right: 1px solid #AAA;
+    float: left;
+    overflow: hidden;
+}
+.nav-lateral.active {
+    width: 250px;
+}
+.nav-lateral ul {
+    list-style: none;
+}
+.nav-lateral ul li a {
+    display: block;
+    color: BLACK;
+    padding: 15px 25px;
+}
+.nav-lateral ul li a:hover {
+    background-color: tomato;
+}
+
+.topo{
+    background-color: lightcoral;
+    padding: 10px;
+    overflow: auto;
+    box-shadow: 0px 3px 10px rgba(200, 0, 0, 0.7);
+
+}
+.toggle {
+    float: left;
+    padding: 8px;
+    margin: 0px 15px; 
+    border-radius: 5px;
+    display: none;
+}
+.logo{
+    display: inline-block;
+    
+}
+
+@media screen and (max-width: 480px){
+    .toggle {
+        display: inline-block;
+    }
+    .nav-lateral {
+        width: 0px;
+        transition: width 300ms;
+    }
+}
+.sanfona{
+    padding: 20px;    
+}
+.sanfona .accordeon h1{
+    background-color: tomato;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px;
+    margin: 10px;
+}
+.accordeon p {
+    display: none;
+}
