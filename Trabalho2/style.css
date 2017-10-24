@@ -1,0 +1,202 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a, a:active, a:visited {text-decoration: none;}
+
+body {
+    background-color: #DDD;
+}
+body::after {
+    position: fixed;
+    z-index: -1;
+    background-color: #009688;
+    width: 100%;
+    height: 127px;
+    content: '';
+    top: 0;
+    left: 0;
+}
+.status{
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+    background-color: green;
+}
+#principal {
+    background: #FFF;
+    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
+    border-radius: 5px;
+    width: 900px;
+    height: 600px;
+    margin: 20px;
+}
+
+#coluna {
+    float: left;
+    width: 300px;
+    height: 100%;
+}
+#coluna-titulo {
+    background: #EEE;
+    padding: 10px;
+    overflow: auto;
+    border-top-left-radius: 5px;
+}
+#coluna-titulo img, #conteudo-titulo img {
+    float: left;
+    width: 35px;
+    height: 35px;
+    padding: 5px;
+    border-radius: 50%;
+    margin: 0 10px;
+    background-color: #FFF;
+    cursor: pointer;
+}
+#coluna-titulo .buttons, #conteudo-titulo .buttons {float: right; color: #999;}
+#coluna-titulo .buttons i, #conteudo-titulo .buttons i {margin: 5px; cursor: pointer;}
+
+#pesquisar {
+    background-color: #FBFBFB;
+    padding: 10px;
+    border-bottom: 1px solid #DDD;
+}
+#campo-pesquisar {
+    background: #FFF;
+    border: 1px solid #EEE;
+    border-radius: 5px;
+    padding: 2px;
+    overflow: auto;
+}
+#pesquisar i {
+    float: left;
+    color: #CCC;
+    font-size: 17px;
+    margin: 4px 10px;
+    cursor: pointer;
+}
+#pesquisar input {
+    float: left;
+    width: 220px;
+    height: 25px;
+    border: none;
+}
+#pesquisar input::-webkit-input-placeholder {
+    color: #AAA;
+}
+
+#lista-contatos {
+    overflow-y: scroll;
+    max-height: calc(100% - 107px);
+}
+#lista-contatos::-webkit-scrollbar, #lista-mensagens::-webkit-scrollbar
+{width: 7px;}
+#lista-contatos::-webkit-scrollbar-thumb, #lista-mensagens::-webkit-scrollbar-thumb
+{background-color: rgba(0, 0, 0, 0.2);}
+#lista-contatos::-webkit-scrollbar-track, #lista-mensagens::-webkit-scrollbar-track
+{background: rgba(255,255,255,0.08);}
+
+.item-contato {
+    border-bottom: 1px solid #EEE;
+    overflow: auto;
+    line-height: 22px;
+    text-align: left;
+    cursor: pointer;
+    line-height: 19px;
+}
+.item-contato img {
+    float: left;
+    width: 47px;
+    height: 47px;
+    background: #DDD;
+    margin: 8px 12px;
+    border-radius: 50%;
+}
+
+.item-contato b, .item-contato span {font-size: 15px; display: block; overflow: auto;}
+.item-contato b {margin-top: 12px; font-weight: normal;}
+.item-contato span {color: #666;}
+
+.item-contato i {
+    float: right;
+    margin: 10px 12px 0;
+    font-style: normal;
+    color: #999;
+    font-size: 14px;
+}
+
+#conteudo {
+    float: left;
+    width: 600px;
+    height: 100%;
+    background-image: url("../imagens/trab2_bg-chat.png");
+    background-size: 400px;
+    background-attachment: fixed;
+    border-left: 1px solid #DDD;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+#conteudo-titulo {
+    background: #EEE;
+    padding: 10px;
+    overflow: auto;
+    line-height: 16px;
+    text-align: left;
+    border-top-right-radius: 5px;
+}
+#conteudo-titulo b {font-size: 15px; font-weight: normal;}
+#conteudo-titulo span {font-size: 10px; color: #555;}
+
+#lista-mensagens {
+    overflow-y: scroll;
+    height: calc(100% - 106px);
+    padding: 15px 25px;
+}
+
+.item-msg {
+    margin: 2px 0;
+    font-size: 14px;
+    color: #111;
+}
+.item-msg div i {
+    font-style: normal;
+    float: right;
+    color: #777;
+    font-size: 11px;
+    margin: 3px 0 0 20px;
+}
+.item-esq {text-align: left;}
+.item-dir {text-align: right;}
+
+.msg-esq, .msg-dir {
+    border-radius: 6px;
+    max-width: 70%;
+    display: inline-block;
+    padding: 7px;
+}
+.msg-esq {background: #FFF;}
+.msg-dir {background: #dcf8c6;}
+
+#campo-mensagem {
+    background: #EFEFEF;
+    padding: 8px;
+    overflow: auto;
+    border-bottom-right-radius: 5px;
+}
+#campo-mensagem input {
+    border: none;
+    width: 475px;
+    padding: 10px;
+    border-radius: 7px;
+    display: block;
+    float: left;
+}
+#campo-mensagem i {
+    margin: 5px 15px;
+    color: #999;
+    display: block;
+    float: left;
+    cursor: pointer;
+}
