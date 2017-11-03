@@ -3,20 +3,12 @@
     padding: 0;
     box-sizing: border-box;
 }
-a, a:active, a:visited {text-decoration: none;}
 
-body {
-    background-color: #DDD;
+.batepapo{
+    float: left;
 }
-body::after {
-    position: fixed;
-    z-index: -1;
-    background-color: #009688;
-    width: 100%;
-    height: 127px;
-    content: '';
-    top: 0;
-    left: 0;
+body {
+    background-color: #FFC0CB;
 }
 .status{
     border-radius: 50%;
@@ -24,78 +16,38 @@ body::after {
     height: 10px;
     background-color: green;
 }
-#principal {
-    background: #FFF;
-    box-shadow: 3px 3px 3px rgba(0,0,0,0.1);
-    border-radius: 5px;
+#meio {
+    background: #D1EEEE;
     width: 900px;
     height: 600px;
     margin: 20px;
 }
-
-#coluna {
+#topo1 {
     float: left;
     width: 300px;
     height: 100%;
 }
-#coluna-titulo {
-    background: #EEE;
+#topo {
+    background: #ccc;
     padding: 10px;
     overflow: auto;
-    border-top-left-radius: 5px;
 }
-#coluna-titulo img, #conteudo-titulo img {
+#topo img, #conteudo-titulo img {
     float: left;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     padding: 5px;
     border-radius: 50%;
-    margin: 0 10px;
-    background-color: #FFF;
+    background-color: #ccc;
+}
+#topo .buttons, #conteudo-titulo .buttons {
+    float: right;
+    color: #999;
+}
+#topo .buttons i, #conteudo-titulo .buttons i {
+    margin: 8px;
     cursor: pointer;
 }
-#coluna-titulo .buttons, #conteudo-titulo .buttons {float: right; color: #999;}
-#coluna-titulo .buttons i, #conteudo-titulo .buttons i {margin: 5px; cursor: pointer;}
-
-#pesquisar {
-    background-color: #FBFBFB;
-    padding: 10px;
-    border-bottom: 1px solid #DDD;
-}
-#campo-pesquisar {
-    background: #FFF;
-    border: 1px solid #EEE;
-    border-radius: 5px;
-    padding: 2px;
-    overflow: auto;
-}
-#pesquisar i {
-    float: left;
-    color: #CCC;
-    font-size: 17px;
-    margin: 4px 10px;
-    cursor: pointer;
-}
-#pesquisar input {
-    float: left;
-    width: 220px;
-    height: 25px;
-    border: none;
-}
-#pesquisar input::-webkit-input-placeholder {
-    color: #AAA;
-}
-
-#lista-contatos {
-    overflow-y: scroll;
-    max-height: calc(100% - 107px);
-}
-#lista-contatos::-webkit-scrollbar, #lista-mensagens::-webkit-scrollbar
-{width: 7px;}
-#lista-contatos::-webkit-scrollbar-thumb, #lista-mensagens::-webkit-scrollbar-thumb
-{background-color: rgba(0, 0, 0, 0.2);}
-#lista-contatos::-webkit-scrollbar-track, #lista-mensagens::-webkit-scrollbar-track
-{background: rgba(255,255,255,0.08);}
 
 .item-contato {
     border-bottom: 1px solid #EEE;
@@ -104,6 +56,7 @@ body::after {
     text-align: left;
     cursor: pointer;
     line-height: 19px;
+    
 }
 .item-contato img {
     float: left;
@@ -130,7 +83,6 @@ body::after {
     float: left;
     width: 600px;
     height: 100%;
-    background-image: url("../imagens/trab2_bg-chat.png");
     background-size: 400px;
     background-attachment: fixed;
     border-left: 1px solid #DDD;
@@ -198,5 +150,5 @@ body::after {
     color: #999;
     display: block;
     float: left;
-    cursor: pointer;
+    cursor: pointer;    
 }
